@@ -9,6 +9,7 @@
     color: #1f2937;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    height: 300vh;
   }
   header {
     background-color: #ffffff;
@@ -23,7 +24,7 @@
     z-index: 100;
   }
 
-  h1 {
+ header h1 {
     font-weight: 600;
     font-size: 1.75rem;
     color: #4f46e5;
@@ -98,4 +99,33 @@
     font-size: 22px;
     color: #9ca3af;
     pointer-events: none;
+  }
+
+  main{
+    display: grid;
+    margin-inline:5vw;
+  }
+
+  div.historias-container {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #58585a, #a7a9af);
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+  div.historias-container img {
+    height: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  div.text-content {
+    width:30vw;
+    text-align: justify;
   }
