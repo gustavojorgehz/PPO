@@ -212,34 +212,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Carrega comentários existentes
     renderizarComentarios();
 
-    // Adiciona alguns comentários de exemplo se não houver nenhum
-    if (comentarios.length === 0) {
-        const comentariosExemplo = [
-            {
-                id: 1,
-                nome: "Maria Silva",
-                texto: "Projeto incrível! É muito importante mostrar essas histórias inspiradoras para as jovens.",
-                data: new Date(Date.now() - 86400000).toLocaleString('pt-BR') // 1 dia atrás
-            },
-            {
-                id: 2,
-                nome: "Ana Costa",
-                texto: "Adorei conhecer mais sobre Ada Lovelace. Não sabia que ela foi a primeira programadora da história!",
-                data: new Date(Date.now() - 172800000).toLocaleString('pt-BR') // 2 dias atrás
-            },
-            {
-                id: 3,
-                nome: "Juliana Santos",
-                texto: "Como professora, vou usar esse material em minhas aulas. Parabéns pela iniciativa!",
-                data: new Date(Date.now() - 259200000).toLocaleString('pt-BR') // 3 dias atrás
-            }
-        ];
-        
-        comentarios = comentariosExemplo;
-        localStorage.setItem('comentarios', JSON.stringify(comentarios));
-        renderizarComentarios();
-    }
-
     // Funcionalidade de teclado para acessibilidade
     document.addEventListener('keydown', (e) => {
         //limpar busca
